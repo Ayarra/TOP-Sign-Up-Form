@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="fonts/Norse-Bold.otf" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>SignUp Form</title>
+  </head>
+  <body>
+    <div class="left">
+      <div class="hero">
+        <img src="images/odin-lined.png" alt="The Odin Logo" />
+        <p>ODIN</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="intro">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+          <br />
+          Sign up <em>now</em> and get started.
+        </p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <form action="#">
+      <div class="odinForm">
+        <h2>Let's do this!</h2>
+          <div class="form-group">
+            <div class="inputGroup">
+              <label for="firstName">First Name </label>
+              <input required type="text" id="firstName" minlength="2" maxlength="30" placeholder="John"/>
+              <div class="error">
+                Must be a valid first name.
+              </div>
+            </div>
+            <div class="inputGroup">
+              <label for="lastName">Last Name </label>
+              <input required type="text" id="lastName"  minlength="2" maxlength="30" placeholder="Doe"/>
+              <div class="error">
+                Must be a valid last name.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inputGroup">
+              <label for="email">Email </label>
+              <input required type="email" id="email" placeholder="example@email.com"/>
+              <div class="error">
+                Must be a valid email address.
+              </div>
+            </div>
+            <div class="inputGroup">
+              <label for="phoneNumber">Phone Number </label>
+              <input required type="tel" id="phoneNumber"placeholder="(000) 000-000" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" />
+              <div class="error">
+                Must be a valid phone number.
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="inputGroup">
+              <label for="password">Password </label>
+              <input required type="password" id="password" placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"/>
+              <div class="error">
+                Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+              </div>
+            </div>
+            <div class="inputGroup">
+              <label for="passwordConfirm">Confirm Password </label>
+              <input required type="password" id="passwordConfirm"  placeholder=" "/>
+              <div class="error">
+               Must match the passwords.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button class="create" type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="">Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>
